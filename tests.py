@@ -1,7 +1,6 @@
 __author__ = 'Marcin'
 
 import unittest
-from calculator import CurrencyCalculator
 import Flight
 
 
@@ -26,7 +25,7 @@ class TestSimulate(unittest.TestCase):
         self.simulate = Flight.Simulate()
 
     def testSimulateGenerateParams(self):
-        assert self.simulate.generateParams() != True, "simulate generateParams() generates wrong values"
+        assert self.simulate.generateParams() == True, "simulate generateParams() generates wrong values"
 
 
 
